@@ -20,3 +20,8 @@ def is_item_in_array(array, item)
     end
     return false
 end
+
+def get_first_key(hash_of_names)
+    array_of_keys = hash_of_names.keys
+    return array_of_keys.first()
+end

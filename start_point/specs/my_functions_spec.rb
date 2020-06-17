@@ -47,32 +47,32 @@ class MyFunctionsTest < MiniTest::Test
      assert_equal( true, result )
    end
 
-  # def test_is_item_in_array__false
+  def test_is_item_in_array__false
   #   # arrange
-  #   houses = [ "Hufflepuff", "Slytherin", "Gryffindor", "Ravenclaw" ]
+  houses = [ "Hufflepuff", "Slytherin", "Gryffindor", "Ravenclaw" ]
   #   # act
-  #   result = is_item_in_array( houses, "Harkonnen" )
+  result = is_item_in_array( houses, "Harkonnen" )
   #   # assert
-  #   assert_equal( false, result )
-  # end
+  assert_equal( false, result )
+  end
 
   ################################################################
 
   # # Write a function that has one parameter hash
   # # It should return the first key from the hash
   #
-  # def test_get_first_key
+  def test_get_first_key
   #   # arrange
-  #   wallets = {
-  #     "Alice" => 12,
-  #     "Bob"  => 10,
-  #     "Charlie"  => 1356,
-  #     "Dave" => 1
-  #   }
+     wallets = {
+       "Alice" => 12,
+       "Bob"  => 10,
+      "Charlie"  => 1356,
+      "Dave" => 1
+     }
   #   # act
-  #   result = get_first_key( wallets )
+    result = get_first_key( wallets )
   #   # assert
-  #   assert_equal( 'Alice', result )
-  # end
+     assert_equal( 'Alice', result )
+   end
 
 end
