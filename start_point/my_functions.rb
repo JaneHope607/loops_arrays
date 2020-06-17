@@ -11,3 +11,12 @@ def sum_array(arr)
  end
  return total
 end
+
+def is_item_in_array(array, item)
+    for object in array
+        if (object == item)
+            return true
+        end
+    end
+    return false
+end
